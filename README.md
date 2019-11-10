@@ -2,7 +2,7 @@
 
 The Transgender Day of Remembrance (TDoR), observed annually on 20 November, memorializes those who were killed or lost to suicide as a result of anti-transgender hatred or prejudice in the past year. In 2018, Cardiff R User Group hosted a datathon centred on the data collected by monitoring bodies and trans activists about relevant deaths, as collated for recent years on https://tdor.translivesmatter.info/. This resulted in a R data package: https://github.com/cardiffR/tdor.
 
-As a pre-event for [Cardiff satRday](https://cardiff2019.satrdays.org/) we will be hosting another hacakthon with two main objectives:
+As a pre-event for [Cardiff satRday](https://cardiff2019.satrdays.org/) we will be hosting another hackathon with two main objectives:
  - Explore the data for 2019: help with data cleaning as well as story-telling via visualisations, dashboards, etc.
  - Update the *tdor* package with the 2019 data and add functionality to work with the new API for https://tdor.translivesmatter.info/.
 
