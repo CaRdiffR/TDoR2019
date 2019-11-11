@@ -10,11 +10,11 @@ The hackathon is on Friday 15 November, 1:00pam to 6:00pm, where we will welcome
 
 The datathon is supported by Forwards (https://forwards.github.io/) and Rainbow R (https://rlgbtq.github.io/).
 
-We have two guides for getting started (Work in Progress!):
+We have two guides for getting started:
 
 [Data Explorer](getting_started_data_explorer.md)  
 [Package Contributor](package_contributor.md)
 
-Choose the path that suits your interest! In both cases you can use the [R Studio cloud instance](https://rstudio.cloud/project/590001), which is already set up with the latest version of the data, the *tdor* package and all its dependencies and other useful packages for data exploration and package development. If you don't already have one, we recommend you sign up for a GitHub account - see the advice on choosing a username in the great [Happy Git and GitHub for the useR](https://happygitwithr.com/github-acct.html). Use of git is required for package contribution, but you can always team up with others if you want to contribute but aren't familiar with git.
+Choose the path that suits your interest! In both cases you can use the [R Studio cloud instance](https://rstudio.cloud/project/590001), which is already set up with the latest version of the data, the *tdor* package and all its dependencies, and other useful packages for data exploration and package development. If you don't already have one, we recommend you sign up for a GitHub account - see the advice on choosing a username in the great [Happy Git and GitHub for the useR](https://happygitwithr.com/github-acct.html). Use of git is required for package contribution, but you can always team up with others if you want to contribute but aren't familiar with git.
 
 
