@@ -8,6 +8,10 @@ We welcome keyword translations from people who are fluent in the target languag
 
 View [`keywords.csv`](https://github.com/CaRdiffR/TDoR2019/blob/master/translations/keywords.csv) on Github to check if the languages you are fluent in have been covered (if you click on `keywords.csv` above, you can view the file as an HTML table). If you can contribute a missing translation, please follow the instructions below. If you want to contribute a translation for a language that is not listed, please raise this on the issue page: https://github.com/CaRdiffR/TDoR2019/issues/1.
 
+**If you don't have a GitHub account**  
+
+Email the translation to rowforwards@gmail.com. Make sure it is clear how the words in the target language correspond to the English keywords!
+
 **If you're not familiar with GitHub**  
  
 1. Go to [`keywords.csv`](https://github.com/CaRdiffR/TDoR2019/blob/master/translations/keywords.csv) and right click on the `Raw` button. Choose "Save link as" and save as "keywords.csv" (you may have to change the file extension).
