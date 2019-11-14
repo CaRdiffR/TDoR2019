@@ -15,6 +15,11 @@ We have two guides for getting started:
 [Data Explorer](getting_started_data_explorer.md)  
 [Package Contributor](getting_started_package_contributor.md)
 
+and related sets of issues to work on 
+
+[data issues](issues) on this repo  
+[package issues](https://github.com/CaRdiffR/tdor/issues) on the tdor repo  
+
 Choose the path that suits your interest! In both cases you can use the [R Studio cloud instance](https://rstudio.cloud/project/590001), which is already set up with the latest version of the data, the *tdor* package and all its dependencies, and other useful packages for data exploration and package development. If you don't already have one, we recommend you sign up for a GitHub account - see the advice on choosing a username in the great [Happy Git and GitHub for the useR](https://happygitwithr.com/github-acct.html). Use of git is required for package contribution, but you can always team up with others if you want to contribute but aren't familiar with git.
 
 
