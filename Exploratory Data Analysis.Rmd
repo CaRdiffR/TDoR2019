@@ -1,0 +1,67 @@
+---
+title: "tdor"
+output: html_notebook
+author: Dave Parr & Mary Cleaton
+---
+
+## How many deaths have occured over time by country?
+
+```{r, fig.dim=c(10,10)}
+library(tdor)
+library(tidyverse)
+tdor <- tdor
+
+tdor %>%
+  group_by(Year, Country) %>%
+  summarise(DeathCount = n()) %>%
+  ggplot(aes(x = Year, y = DeathCount)) +
+  geom_point() +
+  facet_wrap( ~ Country, scales = "free_y")
+```
+
+* Brazil has a much higher recorded deaths rate than any other country. 
+* Some countries rates and/or reporting rates are increasing
+* Other countries rates and/or reporting rates show no clear pattern over time
+
+## Gun Deaths
+
+USA has a very high volume of reported deaths. Is this potentially related to gun availability?
+
+```{r}
+tdor %>%
+  group_by(Country) %>%
+  summarise(TotalDeaths = n()) -> country_totals
+
+tdor %>%
+  mutate(
+    Shot = case_when(
+      str_detect(`Cause of death`, "shot") ~ TRUE, 
+      TRUE ~ FALSE)
+    ) %>%
+  group_by(Country, Shot) %>%
+  summarise(DeathCount = n()) %>%
+  left_join(country_totals) %>%
+  filter(TotalDeaths > 2 & Shot == TRUE) %>%
+  mutate(DeathPrct = (DeathCount / TotalDeaths) * 100) -> tdorShotPercent
+
+ggplot(data = tdorShotPercent, aes(
+  x = reorder(Country,-DeathPrct),
+  y = DeathPrct,
+  fill = Shot
+)) +
+  geom_col() +
+  theme_minimal() +
+  theme(axis.text.x = element_text(
+    angle = 90,
+    hjust = 1,
+    vjust = 0.5
+  )) +
+  labs(title = "Percentage of Deaths by shooting",
+       subtitle = "in countries with more than 2 Deaths",
+       y = "Deaths (%)")
+```
+
+
+* Gun related deaths are very variable between countries
+* Central and South American countries plus USA appear to have the highest proportions of gun deaths
+
